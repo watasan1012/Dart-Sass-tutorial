@@ -1,3 +1,57 @@
+@charset "UTF-8";
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
 
-
-/*# sourceMappingURL=style.css.map */
+.card {
+  width: 200px;
+  padding-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #333;
+  /* ここに下層のセレクタを記載する */
+}
+.card .thumbnail {
+  margin: 0 0 20px;
+}
+.card .thumbnail img {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .text {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.card .text .date {
+  font-size: 16px;
+  color: #777;
+}
+.card .text .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 12px 0 0;
+}
+.card .text .description {
+  font-size: 14px;
+  margin: 12px 0 0;
+  font-feature-settings: "palt";
+  line-height: 1.7;
+  letter-spacing: 0.07em;
+}
+.card .button {
+  color: white;
+  background-color: #3952cd;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 0 auto;
+  display: block;
+}
+.card .button:hover {
+  background: aqua;
+}
+.button .card {
+  background-color: yellow;
+}

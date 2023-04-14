@@ -1,0 +1,67 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$secondary-color: #777;
+$border-color: #000;
+$buttonbk-color: #3952cd;
+$buttonhr-color: aqua;
+$buttonamp-color: yellow;
+$white-color: white;
+$size: 200px;
+$c-size:20px;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+.card {
+    width: $size;
+    padding-bottom: $c-size;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    color: $primary-color;
+    /* ここに下層のセレクタを記載する */
+    .thumbnail {
+        margin: 0 0 20px;
+        img {
+            width: 100%;
+            height: auto;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+    .text {
+        padding-left: 1em;
+        padding-right: 1em;
+        .date {
+            font-size: 16px;
+            color: $secondary-color;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 12px 0 0;
+        }
+        .description {
+            font-size: 14px;
+            margin: 12px 0 0;
+            font-feature-settings: "palt";
+            line-height: 1.7;
+            letter-spacing: 0.07em;
+        }
+    }
+    .button {
+        color: $white-color;
+        background-color: $buttonbk-color;
+        border-radius: 5px;
+        border-width: 1px;
+        margin: 0 auto;
+        display: block;
+        &:hover{
+            background: $buttonhr-color;
+        }
+    }
+    .button & {
+        background-color: $buttonamp-color;
+      }
+}
