@@ -54,7 +54,7 @@ sassの公式サイトは、[sass-lang](https://sass-lang.com/)　です。
 % node -v
 ```
 
-v18.15.0
+v18.16.0
 
 バージョンが記載されれば入っています。バージョンが表示されなかったらインストールされてません。以下公式URLからダウンロードするか
 
@@ -167,7 +167,7 @@ package.json ファイルの　devDependencies　に"sass": "バージョン" �
 ```json
 {
   "devDependencies": {
-    "sass": "^1.62.0"
+    "sass": "^1.62.1"
   }
 }
 ```
@@ -197,6 +197,10 @@ package.json ファイルの　devDependencies　に"sass": "バージョン" �
 
 ```sh
 % npx sass --watch sass:css
+```
+
+```sh
+% npx sass --watch assets/sass:css
 ```
 
 `npx sass --watch sass:css` の解説
