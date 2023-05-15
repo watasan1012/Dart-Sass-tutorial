@@ -1,4 +1,4 @@
-# sass-beginner
+# Dart-Sass-tutorial
 
 ## .gitignoreファイルを作成してgit対象から外す
 
